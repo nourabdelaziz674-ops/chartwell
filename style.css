@@ -1,0 +1,173 @@
+   *{  margin  : 0;
+    padding  : 0;
+    box-sizing  : border-box;
+   }
+
+    body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(251, 251, 251);
+    color: #333;}
+
+   
+
+section {
+    padding: 50px;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+.services {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.service {
+  background-color:rgb(19, 84, 181);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+
+.logo {
+color:rgb(19, 84, 181);
+font-family:Arial, Helvetica, sans-serif;
+font-style: oblique;
+font-size: larger;
+border: 2px solid rgb(61, 61, 217);
+    padding: 10px 15px;
+    border-radius: 8px;
+
+}
+.insights{
+   color:rgb(19, 84, 181);
+}
+
+.contact-btn {
+    background-color:rgb(19, 84, 181);
+    color: rgb(28, 42, 105);
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px;
+   
+}
+.contact-btn:hover {
+    background-color: #2142ae;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+   
+}
+.hero{
+    color:rgb(19, 84, 181);
+    font-size: small;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+ .about img {
+    width: 1500px;
+    max-width: 100%;
+    margin-top: 20px;
+}
+.about {
+    text-align: center;
+    padding: 60px 20px;
+   color:rgb(19, 84, 181);
+}
+#searchInput {
+    padding: 10px;
+    border: 1px solid #1e1ec9;
+    border-radius: 5px;
+}
+.image-split {
+  display: flex;
+  width: 1500px;
+  height: 900px;
+  overflow: hidden; 
+}
+
+.strip {
+  flex: 1;
+  height: 100%;
+  background-image: url("your-image.jpg");
+  background-size: 500% 100%;
+  opacity: 0;
+}
+
+
+.strip:nth-child(1) { background-position: 0% 0%; }
+.strip:nth-child(2) { background-position: 25% 0%; }
+.strip:nth-child(3) { background-position: 50% 0%; }
+.strip:nth-child(4) { background-position: 75% 0%; }
+.strip:nth-child(5) { background-position: 100% 0%; }
+
+
+.strip:nth-child(odd) {
+  animation: slideFromLeft 0.7s ease forwards;
+}
+
+
+.strip:nth-child(even) {
+  animation: slideFromRight 0.7s ease forwards;
+}
+
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.strip:nth-child(1) { animation-delay: 0s; }
+.strip:nth-child(2) { animation-delay: 0.1s; }
+.strip:nth-child(3) { animation-delay: 0.2s; }
+.strip:nth-child(4) { animation-delay: 0.3s; }
+.strip:nth-child(5) { animation-delay: 0.4s; }
+
+.strip {
+  background-image: url("58_ChartwellTeamPortraits_03-29-23.jpg");}
+ 
+  #themeButton {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+   
+}
+.dark-mode {
+    background-color: rgb(9, 1, 39);
+    color: white;
+}
+#contactForm {
+    display: none;
+}
+#topButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
